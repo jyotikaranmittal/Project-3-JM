@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Leaflet JavaScript code -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+    <script src="{{ url_for('static', filename='fuel_script.js') }}"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    
+
+
+    <title>Filtering</title>
+</head>
+
+<body>
+    <h1>Alternative_Fuel_Stations!</h1>
+    <div id="bar-plot"></div>
+    <div id="pie-chart"></div>
+    <select id="selDataset"></select>
+<div id="sample-metadata"></div>
+<div id="bar"></div> <!-- For bar chart -->
+
+    
+    
+        
+    
+    
+    
+
+</body>
+
+</html>

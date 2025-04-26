@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <title>Filtering</title>
+</head>
+
+<body>
+    <h1>Electric Vehicle Population!</h1>
+    <div id="bar-plot"></div>
+    <div id="bar-plot1"></div>
+    <div id="sample-metadata"></div>
+    <!-- drop down for EV Make selection -->
+    <label for="selDataset">Select EV Make:</label>
+<select id="selDataset" onchange="optionChanged(this.value)"></select>
+<!-- charts -->
+<div id="bar"></div>
+<div id="bubble"></div>
+
+    
+    <!-- Load JavaScript at the end to ensure elements exist -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    
+    
+        
+    
+    
+    
+
+</body>
+
+</html>
